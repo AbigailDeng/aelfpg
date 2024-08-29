@@ -9,11 +9,11 @@ import path from "path";
 //   return zippedData;
 // }
 export function getAllFiles(dirPath) {
-    var results = [];
-    var list = fs.readdirSync(dirPath);
-    list.forEach(function (file) {
-        var filePath = path.join(dirPath, file);
-        var stat = fs.statSync(filePath);
+    let results = [];
+    const list = fs.readdirSync(dirPath);
+    list.forEach(file => {
+        const filePath = path.join(dirPath, file);
+        const stat = fs.statSync(filePath);
         if (stat.isDirectory()) {
             results = results.concat(getAllFiles(filePath));
         }

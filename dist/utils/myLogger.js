@@ -1,5 +1,5 @@
 import Logger from "./Logger.js";
-var logger = new Logger({
+const logger = new Logger({
     name: "AElf Playground",
     log: true,
 });

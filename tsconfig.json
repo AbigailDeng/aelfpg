@@ -3,6 +3,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
+    "target": "ES6",
     "module": "esnext",
     "esModuleInterop": true,
     "moduleResolution": "node",

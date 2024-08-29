@@ -1,9 +1,9 @@
 import { getAllFiles } from "../utils/fileContentToZip";
-export var auditCommand = function (directory) {
+export const auditCommand = (directory) => {
     try {
-        var files = getAllFiles(directory);
+        const files = getAllFiles(directory);
         console.log("Files found:");
-        files.forEach(function (file) { return console.log(file); });
+        files.forEach(file => console.log(file));
     }
     catch (error) {
         console.error("Error:", error);
